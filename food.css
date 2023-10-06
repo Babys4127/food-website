@@ -1,0 +1,229 @@
+
+    html,body{
+        min-height: 100vh;
+    }
+    *{
+        margin: 1%;
+    }
+h1{
+    background-color: antiquewhite;
+    color: brown;
+    font-size:25px ;
+    font-family: cursive;
+    text-align: left;
+    width: 200px;
+}
+
+.head-text{
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.hero-img{
+    width: 100%;
+    height: 400px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+#cart{
+    float: right;
+}.search{
+    color: white;
+}
+.column{
+flex-direction: row;
+    width: 250px;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid rgb(82, 62, 62);
+    border-style: double;
+    border-radius: 10px;
+}
+.cat-img{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 150px;
+}
+.category{
+    text-align: center;
+    color: brown;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.blog-item{
+width: 30%;
+height: 330px;
+flex-direction: row;
+border: 1px solid grey;
+}
+.blog-img{
+    width: 99%;
+    height:200px ;
+    
+}
+.blog-item-text{
+font-size: 18px;
+font-family: cursive;
+}
+.blog-item-para{
+    font-size:16px ;
+    font-family: cursive;
+}
+.footer-copyright-text{
+    text-align: center;
+}
+.bank-offer{
+    color: rgb(226, 219, 219);
+    background-color:rgba(252, 118, 232, 0.89);
+    width: 100%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:29px ;
+    text-align: center;
+    padding-top: 80px;
+}
+footer{
+    display: flex;
+    background-color: bisque;
+    flex-wrap: wrap;
+    height: 600px;
+    margin-top: 50px;
+}
+.middle , .left ,.right{
+    flex-direction: row;
+    flex: 30%;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+}
+.offer{
+  height: 110px;  
+  border: 1px solid grey;
+  background-color: bisque;
+}
+.offer-img{
+    width: 30%;
+    height: 100px;
+    
+}
+.offer-text{
+    width: 50%;
+    float: right;
+    font-size: 22px;
+    color: orangered;
+line-height: 30px;
+}
+.footer-copyright-text{
+    text-align: center;
+    font-size: 20px;
+}
+.column-2{
+    width: 250px;
+    height: 220px;
+    
+}
+.row-img{
+    width: 100%;
+    height: 160px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.fruits , .veggie , .snacks{
+    text-align: left;
+    color: brown;
+    font-size: 25px;
+    background-color: rgba(235, 231, 226, 0.432);
+}
+.desc{
+    text-align: center;
+    font-weight: bold;
+}
+#menu{
+    display: none;
+}
+/*responsive media queries*/
+@media (max-width:963px){
+    .column{width:150px ;
+        padding: auto;
+    }   
+}
+@media(max-width:1000px){
+    .blog-item{
+    flex-direction: column;
+    width: 100%;
+
+    }
+    .left,.middle,.right,.footer-copyright-text{
+        font-size: 14px;
+    }
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align:right;
+    }
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#navLinks {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#navLinks li {
+    margin-right: 15px;
+}
+
+/* Styles for the navigation icon on small screens */
+@media screen and (max-width: 768px) {
+    #navLinks {
+        display: none;
+    }
+    #navIcon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
